@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama SVG</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f8f8f8;
+        }
+        
+        .diagram-wrapper {
+            max-width: 100%;
+            max-height: 90vh;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            background: white;
+        }
+
+        .diagram-wrapper object {
+            display: block;
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="diagram-wrapper">
+        <object type="image/svg+xml" data="diagram.drawio.svg">
+            Tu navegador no soporta SVG
+        </object>
+    </div>
+</body>
+</html>
